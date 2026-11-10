@@ -1,0 +1,35 @@
+---
+description: Conventions for team agreement documents in docs/
+globs: docs/**/*.md
+alwaysApply: false
+---
+
+# Documents in docs/
+
+`docs/` holds team agreements: commits, branches, pull requests, and naming. Site copy lives in `i18n/messages/`, not here.
+
+## Write
+
+- One topic per file. Name the file in kebab-case, for example `pull-request-workflow-guidelines.md`.
+- Write in English, in the same tone as the existing guides.
+- Open with a title and one short paragraph on why the agreement exists.
+- State the rule, then show a concrete example of the expected form.
+- Keep the steps clear enough for a new teammate who has not read the code.
+
+## Leave out
+
+- Secrets, tokens, and personal data. This repository is public.
+- A second copy of a rule that already has its own file. Link that file instead.
+- How a Foundation page behaves. That belongs in product texts, not in these agreements.
+
+## Example
+
+```markdown
+# Commit message
+
+Use Conventional Commits so review history stays readable.
+
+## Format
+
+feat(archive): add fund search
+```
